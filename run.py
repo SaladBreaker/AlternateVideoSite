@@ -6,4 +6,4 @@ logger = logging.getLogger(__name__)
 
 if __name__ == "__main__":
     configure_logging()
-    app.run(debug=True)
+    app.run(debug=False)
