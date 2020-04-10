@@ -1,0 +1,50 @@
+/* Style the video: 100% width and height to cover the entire window */
+#source1 {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: auto;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#source2 {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: auto;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  height: 7%;
+  width: 100%;
+  padding: 20px;
+}
+
+body {
+  background: #000000;
+  padding: 1em;
+}
+
+h1 {
+  position: relative;
+  font-size: 70px;
+  text-align:center;
+  margin-top: 0;
+  font-family: 'Lobster', helvetica, arial;
+}
+
+h1:after {
+  color: #d6d6d6;
+  text-shadow: 0 1px 0 white;
+}
