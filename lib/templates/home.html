@@ -1,19 +1,20 @@
 {% extends "layout.html"%}
 {% block content%}
 
-<script src="{{url_for('static',filename='js/hold_button.js')}}"></script>
 
-<!-- The video1-->
-<div onmousedown="downfunction()" onmouseup="upfunction()">
+<!-- <div onmousedown="downfunction()" onmouseup="upfunction()"> -->
+<div>
+
+    <!-- The video1-->
     <div id="video_1" style="display: block;">
-        <video autoplay loop id="source1">
+        <video autoplay muted loop id="source1">
             <source src="{{ url_for('static', filename='videos/background1.mp4') }}" type="video/mp4">
         </video>
     </div>
 
     <!-- The video2-->
     <div id="video_2" style="display: none;">
-        <video autoplay loop id="source2">
+        <video autoplay muted loop id="source2">
             <source src="{{ url_for('static', filename='videos/background2.mp4') }}" type="video/mp4">
         </video>
     </div>
@@ -22,6 +23,11 @@
         <center>
             <h1>Click anywhere Alexandra!</h1>
         </center>
+        <canvas id="progress_bar" class="sound_canvas" style="border:1px solid #d3d3d3;">
+            <script>
+                setTimeout(onCreateCanvasAudioLine, 3000);
+            </script>
+        </canvas>
     </div>
 </div>
 {% endblock content%}

@@ -4,7 +4,7 @@
   right: 0;
   bottom: 0;
   height: 100%;
-  width: auto;
+  width: 100%;
   min-width: 100%;
   min-height: 100%;
 }
@@ -14,22 +14,11 @@
   right: 0;
   bottom: 0;
   height: 100%;
-  width: auto;
+  width: 100%;
   min-width: 100%;
   min-height: 100%;
 }
 
-/* Add some content at the bottom of the video/page */
-.content {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
-  height: 7%;
-  width: 100%;
-  padding: 20px;
-}
 
 body {
   background: #000000;
@@ -38,7 +27,7 @@ body {
 
 h1 {
   position: relative;
-  font-size: 70px;
+  font-size: 30px;
   text-align:center;
   margin-top: 0;
   font-family: 'Lobster', helvetica, arial;
